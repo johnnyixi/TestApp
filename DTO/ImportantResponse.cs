@@ -8,7 +8,6 @@ public class ImportantResponse
     public ImportantResponse(Guid correlationId, string timeInMillisecond)
     {
         CorrelationId = correlationId;
-
         TimeInMillisecond = timeInMillisecond;
     }
 }

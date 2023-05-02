@@ -8,6 +8,7 @@ public class RandomGeneratorService : IRandomGeneratorService
 {
     const int Min = 1;
     const int Max = 1000000;
+    const int Target = 400000;
     readonly byte[] randomBytes = new byte[4];
 
     private readonly ICorrelationService _correlationService;
@@ -27,7 +28,7 @@ public class RandomGeneratorService : IRandomGeneratorService
 
         stopwatch.Start();
 
-        for (var i = 0; i < 400000; i++)
+        for (var i = 0; i < Target; i++)
         {
             bool numberAdded = false;
 
